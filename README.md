@@ -6,7 +6,7 @@ the diffusion pump is exposed to too high a pressure.
 An obvious solution is to simply add a line at the top of each protocol that checks whether the pressure is low enough before opening the angle valve to the diffusion pump
 (closing the angle valve is generally safe, but opening it is generally not).
 
-However, there are a whole bunch of legacy protocols to which this line must be added. This is tedious. I tried writing a vba script to do this,
+However, there are a whole bunch of legacy protocols to which this line must be added. This is tedious. I tried writing a VBA script to do this,
 but I really hate VBA from the bottom of my heart and it was not easy to do so safely.
 
 Python is better. Hence this project.
