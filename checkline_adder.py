@@ -33,6 +33,11 @@ def add_checkline_and_consecutive(filename):
         for line in file:
             elements = line.split(",")
             # TODO: check whether the first element in the line is empty. If so, ignore the line
+            # amendment to the above: check the second element, since this is what the Labview program actually cares about
+            if elements[1] == '':
+                # if the second element in the line is empty, break out of the loop
+                # ie trim ignored lines from the new file
+                break
             elements[0] = current_number
             for index in range(len(elements)):
                 elements[index] = str(elements[index])
