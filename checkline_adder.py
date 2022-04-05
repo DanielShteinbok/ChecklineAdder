@@ -44,7 +44,7 @@ def add_checkline_and_consecutive(filename):
             #file_contents.append(elements.join(","))
             file_contents.append(",".join(elements))
             current_number += 1
-    with open(filename, 'w', encoding="iso-8859-1") as file:
+    with open(filename, 'w', encoding="iso-8859-1", newline='') as file:
         file.write("".join(file_contents))
     #print(repr("".join(file_contents)))
 
